@@ -1,0 +1,11 @@
+{
+  "name": "tally-household-budget",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local-only household budget dashboard for January to November 2026.",
+  "scripts": {
+    "serve": "node serve.ts",
+    "shots": "node capture.mjs"
+  }
+}

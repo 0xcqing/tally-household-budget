@@ -1,0 +1,5 @@
+[
+  { "file": "1-dashboard.jpg", "path": "?month=2026-01", "viewport": { "width": 1280, "height": 900 } },
+  { "file": "2-overbudget.jpg", "path": "?month=2026-03", "viewport": { "width": 1280, "height": 900 } },
+  { "file": "3-dashboard-phone.jpg", "path": "?month=2026-11", "viewport": { "width": 390, "height": 844 } }
+]

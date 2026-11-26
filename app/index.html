@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A clear, local household budget dashboard for January to November 2026.">
+<meta name="theme-color" content="#4338ca">
+<title>Tally · Household Budget</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<div class="site">
+  <header class="site-header">
+    <span class="header-glow glow-one" aria-hidden="true"></span>
+    <span class="header-glow glow-two" aria-hidden="true"></span>
+
+    <div class="header-top">
+      <a class="brand" href="#app" aria-label="Tally household budget">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20V10"/>
+            <path d="M10 20V4"/>
+            <path d="M16 20v-7"/>
+            <path d="M22 20H2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Tally</strong>
+          <span>Household budget</span>
+        </span>
+      </a>
+      <span class="header-chip"><span class="chip-dot" aria-hidden="true"></span>2026 snapshot</span>
+    </div>
+
+    <div class="month-hero">
+      <div class="month-copy">
+        <p class="header-eyebrow">Monthly budget</p>
+        <h1 id="monthHeading"><span id="monthName">January</span> <span class="year" id="monthYear">2026</span></h1>
+        <p class="header-sub">Income, spending and savings at a glance.</p>
+      </div>
+      <nav class="month-nav" aria-label="Month navigation">
+        <button class="nav-button" id="prevMonth" type="button" aria-label="Previous month">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <span class="month-count" id="monthCount" aria-live="polite">1 of 11</span>
+        <button class="nav-button" id="nextMonth" type="button" aria-label="Next month">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="dashboard" data-dir="none" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <span class="footer-brand"><span class="footer-dot" aria-hidden="true"></span>Tally · 2026</span>
+    <p>Sample household data for January – November 2026. Everything is stored locally in this page.</p>
+  </footer>
+</div>
+<noscript><p class="noscript">This dashboard needs JavaScript enabled to switch months and draw the charts.</p></noscript>
+</body>
+</html>
